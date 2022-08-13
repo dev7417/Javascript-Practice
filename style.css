@@ -8,7 +8,7 @@ body{
     border: 2px solid #fff;
     /* margin: 10px; */
     display: inline-block;
-    
+    background: #fff;
     margin: 10px;
 }
 
@@ -26,4 +26,8 @@ body{
 }
 .hide{
     display: none;
+}
+.dashed{
+    background: rgb(237, 223, 223);
+    border-style: dashed;
 }
