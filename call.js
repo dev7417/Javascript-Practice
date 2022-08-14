@@ -1,30 +1,21 @@
-
-const dev = {
+let userDetails = {
     name: "Dev",
     sirName: "Gangwar",
-    feature: function(){
-        console.log(`hello ${this.name}`);
-    }
-}
-// dev.feature();
-
-const dev3 = {
-    name: "honey",
-    sirname: "gdwggf",
-}
-
-dev.feature.call(dev3);
-
-const nam1 = {
-    name: "Hello",
-    sirName: "Golu",
-    play: function(){
-        console.log(`Hello ${this.sirName}`);
+    age: 22,
+    Designation: "Front end Developer",
+    feature: function(city){
+        // console.log(`hello this is all about `, this);
+        console.log(this.name+" "+city)
     }
 }
 
-const nam2 = {
-    name: "Pello",
-    sirName: "chello"
+// userDetails.feature();
+
+let userDetails2 = {
+    name: "Harry",
+    sirName: "Das",
+    age: 24,
+    Designation: "Back end Developer",
+
 }
-nam1.play.call(nam2);
+userDetails.feature.call(userDetails2, "bareilly");
