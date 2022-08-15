@@ -34,3 +34,10 @@ var student = {
 const {age,...rest} = student;
 console.log(student);
 console.log(rest)
+
+
+var students={
+    ...student,
+    age: 20
+}
+console.log(students)
